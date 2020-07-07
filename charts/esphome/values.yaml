@@ -83,7 +83,7 @@ persistence:
   ## If you want to use a volume on the host machine instead of a PVC:
   # hostPath: /path/to/the/config/folder
   accessMode: ReadWriteOnce
-  size: 5Gi
+  size: 1Gi
 
 ## Additional hass container environment variable
 ## For instance to add a http_proxy
@@ -92,7 +92,7 @@ extraEnv: {}
 
 ## Additional hass container environment variable from k8s secrets
 ## For instance to add a password
-## can use `!env_var` in the home assistant configuration to reference these variables
+## can use `!env_var` in the esphome configuration to reference these variables
 extraEnvSecrets:
   # Example
   # This will set ${MQTT_PASSWORD} to the 'password' key from the 'mqtt' secret
